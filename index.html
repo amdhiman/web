@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Aman Dhiman Laksar</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-transform: capitalize;
+        }
+
+        .nav {
+            background-color: blue;
+            overflow: auto;
+
+            height: 6vh;
+        }
+
+        .nav .bar h3 {
+            width: 30%;
+            color: rgb(36, 243, 0);
+            float: left;
+            font-size: 2vw;
+            margin-top: 0px;
+            font-family: jokerman;
+        }
+
+        .nav .bar ul {
+            width: 70%;
+            float: right;
+            margin-top: 0.7vh;
+        }
+
+        .nav .bar ul li {
+            list-style: none;
+            float: left;
+            margin-left: 2vw;
+            font-size: 2vw;
+            color: cornsilk;
+        }
+
+        .div1 {
+            font-style: normal;
+            margin-left: 6vw;
+            width: 38vw;
+            margin-top: 15vh;
+
+
+
+        }
+
+        p {
+            font-size: 1.2vw;
+            color: rgb(73, 76, 83);
+        }
+
+        .nex {
+            color: rgb(0, 153, 255);
+        }
+
+        .ser {
+            color: rgb(0, 162, 255);
+        }
+
+        .btn {
+            width: 20vw;
+            height: 5vh;
+            padding: 15px;
+            padding-left: 3vw;
+            padding-right: 3vw;
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+            border: 2px solid rgb(0, 162, 255);
+        }
+
+        .btn:hover {
+            background-image: linear-gradient(to top right,
+                    cyan, rgba(255, 255, 0, 0.555), blue);
+            box-shadow: 4px 4px 10px 3px black;
+            color: rgb(255, 0, 0);
+        }
+
+        h1 {
+            font-size: 3.8vw;
+        }
+
+
+        .bg {
+            background-image: url("header-img.png");
+            background-size: 50vw 100vh;
+            background-repeat: no-repeat;
+            background-position: top right;
+            width: 100%;
+            height: 100vH;
+        }
+
+        .logo {
+            margin-top: 7vw;
+            font-size: 1.5vw;
+            margin-left: 6vw;
+            margin-top: 20vh;
+
+        }
+
+        .logo p {
+            font-size: 1vw;
+            margin-top: 1.5vh;
+        }
+
+        .div2 {
+            text-align: center;
+            margin-top: 15vh;
+
+        }
+
+        .tt {
+            text-align: left;
+            margin-left: 6vw;
+            width: 20vw;
+
+
+        }
+
+        .ch2 {
+            margin-left: 10vw;
+        }
+
+        .ch3 {
+            margin-left: 10vw;
+        }
+
+        .p {
+            width: 100vw;
+            display: flex;
+
+        }
+
+        .p p {
+            line-height: 3.5vh;
+            margin-top: 4vh;
+        }
+
+        .tt .png {
+            width: 7vw;
+            height: 14vh;
+            margin-top: 10vh;
+
+        }
+
+        .tt h3 {
+            margin-top: 4vh;
+        }
+
+        .new {
+            width: 100%;
+
+        }
+
+        .div3 {
+            background-image: url("video-bg-shape.png");
+            background-size: 50vw 100vh;
+            background-repeat: no-repeat;
+            background-position: top left;
+            width: 100%;
+            height: 100vH;
+            margin-top: 20vh;
+        }
+
+        .div3 .png1 {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            background: -webkit-linear-gradient(90deg, #4ba0f9 0%, #85f3f9 100%);
+            position: absolute;
+            left: 25%;
+            top: 318%;
+            animation: mx1 4s infinite;
+
+
+        }
+
+        .logo .mx {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            background: -webkit-linear-gradient(90deg, #4ba0f9 0%, #85f3f9 100%);
+            position: absolute;
+            left: 6vw;
+            top: 90%;
+            animation: mx1 4s infinite;
+           
+        }
+@keyframes mx1{
+ 
+  
+    0%{
+        box-shadow: 0px 0px 1.5px 2px rgba(26, 196, 248, 0.794);
+    }
+    10%{
+        box-shadow: 0px 0px 4px 9px  rgba(50, 158, 246, 0.561);
+    }
+    20%{
+        box-shadow: 0px 0px 8px 13px rgba(50, 158, 246, 0.534);
+    }
+    30%{
+        box-shadow: 0px 0px 12px 17px rgba(50, 158, 246, 0.534);
+    }
+    40%{ 
+        box-shadow: 0px 0px 16px 20px rgba(50, 158, 246, 0.534);
+    }
+    50%{
+        box-shadow: 0px 0px 20px 22px rgba(50, 158, 246, 0.534);
+    }
+    60%{
+        box-shadow: 0px 0px 16px 20px rgba(50, 158, 246, 0.534);
+    }
+    70%{
+        box-shadow: 0px 0px 12px 17px rgba(50, 158, 246, 0.534);
+    }
+    80%{
+        box-shadow: 0px 0px 12px 17px rgba(50, 158, 246, 0.534);
+    }
+    90%{
+        box-shadow: 0px 0px 8px 13px rgba(50, 158, 246, 0.534);
+    }
+    100%{
+        box-shadow: 0px 0px 4px 9px  rgba(50, 158, 246, 0.561);
+    }
+  
+}
+        .logo .mx .mx2 {
+            background-image: url("mx.png");
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-size: 55%;
+            margin-top: 3.3vh;
+            margin-left: 1.8vw;
+           
+        }
+
+        .div3 .png1 .lo {
+            background-image: url("mx.png");
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-size: 55%;
+            margin-top: 3.3vh;
+            margin-left: 1.8vw;
+        }
+
+        .wrt {
+            float: right;
+
+        }
+
+        .wrt h1 {
+            margin-top: 15vh;
+            margin-left: 58vw;
+            margin-right: 7vw;
+        }
+
+        .wrt .p1 {
+            margin-top: 3vh;
+            margin-left: 58vw;
+            margin-right: 6vw;
+            line-height: 3.5vh;
+        }
+
+        .wrt p {
+            font-style: italic;
+            font-size: 1.5vw;
+            font-weight: bold;
+            color: rgb(68, 60, 60);
+        }
+
+        .abt_box {
+            width: 35vw;
+            height: 30vh;
+            background-color: #e6effd;
+            position: relative;
+            margin-left: 58vw;
+
+        }
+
+        .bb {
+            width: 16vw;
+            height: 12vh;
+            background-color: transparent;
+            color: black;
+            position: absolute;
+            margin: 12px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .bb:hover {
+            background-image: linear-gradient(to top right,
+                    rgb(115, 115, 248), rgb(0, 255, 255));
+            border: 12px, blue;
+        }
+
+        .bb h2 {
+            font-weight: bold;
+            font-size: 2.5vw;
+            margin-top: 0.5vw;
+        }
+
+        .ql {
+            left: 0px;
+            top: 0px;
+
+        }
+
+        .bb p {
+            margin-top: 5px;
+        }
+
+        .sc {
+            right: 0px;
+            top: 0px;
+        }
+
+        .tr {
+            left: 0px;
+            bottom: 0px;
+
+        }
+
+        .ac {
+            right: 0px;
+            bottom: 0px;
+        }
+
+
+        .po {
+            width: 100%;
+            height: 150vh;
+            margin-top: -10vh;
+
+        }
+
+        .wrtt {
+            position: relative;
+            margin-left: 55vw;
+
+            top: 50vh;
+        }
+
+        .wrtt h1 {
+            margin-left: 2vw;
+            margin-right: 10vw;
+            margin-top: -15vh;
+        }
+
+        .wrtt p {
+            margin-left: 2vw;
+            margin-top: 2.5vh;
+            margin-right: 10vw;
+            font-size: 1.3vw;
+        }
+
+        .img {
+            width: 25vw;
+            z-index: 8;
+            height: 60vh;
+            background-image: url("4320.jpg");
+            background-repeat: no-repeat;
+            position: absolute;
+            margin-left: 8vw;
+            top: 40vh;
+            border: 3px solid rgb(97, 83, 83);
+            box-shadow: 4px 4px 15px 3px rgb(0, 0, 0);
+            border-radius: 6px;
+        }
+
+        .img1 {
+            width: 25vw;
+            z-index: 4;
+            height: 60vh;
+            background-image: url("a.jpg");
+            background-repeat: no-repeat;
+            position: absolute;
+            margin-left: 8.2vw;
+            left: 20px;
+            top: 41vh;
+            border: 3px solid rgb(97, 83, 83);
+            box-shadow: 4px 4px 15px 3px rgb(0, 0, 0);
+            border-radius: 6px;
+
+        }
+
+        .img2 {
+            width: 25vw;
+            z-index: 3;
+            margin-left: 8.3vw;
+            height: 60vh;
+            top: 42vh;
+            background-image: url("b.jpg");
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 40px;
+            border: 3px solid rgb(97, 83, 83);
+            box-shadow: 4px 4px 15px 3px rgb(0, 0, 0);
+            border-radius: 6px;
+
+        }
+
+        .img3 {
+            width: 25vw;
+            z-index: 2;
+            height: 60vh;
+            top: 43vh;
+            margin-left: 8.4vw;
+            background-image: url("c.jpg");
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 60px;
+            border: 3px solid rgb(97, 83, 83);
+            box-shadow: 4px 4px 15px 3px rgb(0, 0, 0);
+            border-radius: 6px;
+
+        }
+
+        .img4 {
+            width: 25vw;
+            z-index: 1;
+            height: 60vh;
+            top: 44vh;
+            margin-left: 8.5vw;
+            background-image: url("d.jpg");
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 80px;
+            border: 3px solid rgb(97, 83, 83);
+            box-shadow: 4px 4px 15px 3px rgb(0, 0, 0);
+            border-radius: 6px;
+
+        }
+
+        .c:hover {
+            z-index: 10;
+        }
+
+        .top {
+            position: absolute;
+        }
+
+        .wrtt a {
+            width: 20vw;
+            height: 5vh;
+            padding: 15px;
+            padding-left: 3vw;
+            padding-right: 3vw;
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+            border: 2px solid rgb(0, 162, 255);
+            margin-left: 10vh;
+            position: relative;
+            top: 8vh;
+        }
+
+        .wrtt a:hover {
+            background-image: linear-gradient(to top right, cyan,
+                    rgba(255, 255, 0, 0.555), rgb(0, 247, 255));
+            box-shadow: 4px 4px 10px 3px black;
+
+            color: rgb(255, 0, 0);
+        }
+
+        .cus {
+            width: 100%;
+            height: 70vh;
+            background-image: linear-gradient(to top right, cyan, rgb(0, 255, 179));
+        }
+
+        .cus h2 {
+            margin-left: 10vw;
+            top: 5vh;
+            position: relative;
+            font-size: 4vw;
+
+        }
+
+        .cus p {
+            margin-left: 10vw;
+            position: relative;
+            top: 6vh;
+            font-size: 1.5vw;
+        }
+
+        .cus a {
+            position: relative;
+            top: 11vh;
+            margin-left: 10vw;
+            width: 10vw;
+            height: 5vh;
+            padding: 15px;
+            padding-left: 3vw;
+            padding-right: 3vw;
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+            border: 2px solid rgb(0, 162, 255);
+            box-shadow: 3px 3px 10px 1px black;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+
+
+        }
+
+        .cus .mail {
+            margin-top: 4vh;
+        }
+
+        .cus .call {
+            margin-top: 4vh;
+        }
+
+        .cus .whats {
+            margin-top: 4vh;
+        }
+
+        .cus a:hover {
+            background-image: linear-gradient(to top right,
+                    rgb(60, 255, 0), rgb(255, 238, 0));
+            box-shadow: 4px 4px 10px 3px black;
+            color: rgb(0, 4, 255);
+        }
+
+        .about {
+            width: 80%;
+            height: 60vh;
+        }
+
+        .about h2 {
+            margin-left: 6vw;
+            font-size: 3vw;
+        }
+
+        .h2 {
+            width: 32vw;
+            height: 20vh;
+            margin-top: 10vh;
+            line-height: 9.5vh;
+        }
+
+        .about .p {
+            margin-left: 6vw;
+            width: 35vw;
+            margin-top: 22vh;
+            display: block;
+
+        }
+
+        .about .p p {
+            font-size: 2.5vh;
+            line-height: 3.5vh;
+
+        }
+
+        .about a {
+            position: relative;
+            top: -10vh;
+            right: -70vw;
+            width: 10vw;
+            height: 3vh;
+            padding: 15px;
+            padding-left: 1.5vw;
+            padding-right: 1.5vw;
+            padding-top: 1.5vw;
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+            border: 2px solid rgb(0, 162, 255);
+            box-shadow: 3px 3px 10px 1px black;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+
+
+        }
+
+        .about a:hover {
+            background-image: linear-gradient(to top right,
+                    rgb(0, 255, 128), rgb(0, 247, 255));
+            box-shadow: 4px 4px 10px 3px black;
+            color: rgb(0, 4, 255);
+        }
+
+        .black {
+            background-color: rgb(24, 22, 22);
+            width: 100%;
+            height: 80vh;
+            margin-top: 40vh;
+            position: relative;
+        }
+
+        .black .aa {
+            margin-left: 7vw;
+            display: flex;
+            position: absolute;
+
+        }
+
+        .black .abtne {
+            width: 20vw;
+            height: 40vh;
+            margin-top: 15vh;
+            display: block;
+        }
+
+        .black .abtne h2 {
+            font-size: 1.8vw;
+            color: whitesmoke;
+        }
+
+        .black .abtne p {
+            font-size: 1.2vw;
+            color: rgb(128, 119, 119);
+            line-height: 3.4vh;
+            margin-top: 5vh;
+        }
+
+        .black .navi {
+            width: 30vw;
+            height: 40vh;
+            margin-top: 15vh;
+            display: flex;
+            margin-left: 35vw;
+
+
+        }
+
+
+        .black .navi h2 {
+            font-size: 1.8vw;
+            color: whitesmoke;
+        }
+
+        .black .navi a {
+
+            color: rgb(92, 88, 88);
+            display: block;
+            text-decoration: none;
+            margin-top: 1.8vh;
+            font-size: 1.5vw;
+        }
+
+        .navi .left {
+            width: 10vw;
+            margin-top: 7.5vh;
+            margin-left: -13.5vw;
+        }
+
+        .navi .right {
+            width: 10vw;
+            margin-top: 7.5vh;
+        }
+
+        .black .news {
+            width: 20vw;
+            height: 40vh;
+            margin-top: 15vh;
+            display: block;
+            margin-left: 62vw;
+
+        }
+
+        .black .news h2 {
+            font-size: 1.8vw;
+            color: whitesmoke;
+
+        }
+
+        .black .news p {
+            font-size: 1.4vw;
+            color: rgb(128, 119, 119);
+            line-height: 3.4vh;
+            margin-top: 5vh;
+        }
+
+        .line {
+            width: 100vw;
+            height: 1px;
+            background-color: red;
+            top: 60vh;
+            position: absolute;
+        }
+
+        .last {
+            margin-left: 10vh;
+            position: relative;
+            top: 62vh;
+        }
+
+        .last p {
+            font-size: 1.5vw;
+        }
+
+        .last span {
+            color: rgb(0, 255, 234);
+            font-size: 2.5vw;
+            font-family: Lucida Calligraphy;
+            font-weight: bold;
+            text-shadow: 8px 8px 5px rgb(0, 255, 128);
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="bar">
+            <h3>AmAN</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Projects</li>
+                <li>Team</li>
+                <li>Pages</li>
+                <li>blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg">
+        <div class="div1">
+
+            <h1>We Are <font class="nex">Aman</font>. Design & Development
+                <font class="ser">Service</font> Provider.
+            </h1>
+            <br>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                quisquam odit, rerum tenetur autem
+                fuga
+                architecto cum perferendis dicta illum.</p>
+            <br>
+            <br> <a class="btn" href="#">MORE ABOUT US</a>
+            <div class="logo">
+                <div class="mx">
+                    <div class="mx2"></div>
+                </div>
+                <h3>Watch Live Demo</h4>
+                    <p>You Will Love Our Execution</p>
+            </div>
+        </div>
+    </div>
+    <div class="new">
+        <div class="div2">
+            <P> WE ARE PROVIDING THESE SERVICES</P>
+            <br><br>
+            <H1>We Are <font class="nex">Aman.</font> We Provide These</h1>
+            <h1>Services To Our Customers</H1>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="p">
+        <div class="ch1 tt">
+            <img class="png" src="user-interface.png" alt="">
+            <h3>Website Development</h3>
+            <p>Form Building to hosting a website, we are the one stop solution
+                for all your needs related to website
+                Developmentin haridwar. Form E-commerce website to wordpress
+                Development Service and many more, we have
+                got your back.</p>
+
+        </div>
+        <div class="ch2 tt">
+
+            <img class="png" src="user-interface (1).png" alt="">
+            <h3>Dynamic Web Application</h3>
+            <p>A Business like yours requies a site that worls in real-time.
+                get your web page scripted with java,
+                servlets, jsp, spring boot, hibernate etc. by the website
+                Developmer in haridwar. Development an
+                e-Commerce website or a social networking site with much ease.
+                the best web application
+                Developmentcompany in haridwar, Aman web services, with years
+                of experience and expertise, will
+                proivde you with a site with dynamic contect to suit ball your
+                web apllications necessities....... </p>
+
+        </div>
+        <div class="ch3 tt">
+            <img class="png" src="user-interface (2).png" alt="">
+            <h3>E-Commerce Solutions</h3>
+            <p>selling something online has never been easier. leave it to the
+                best e-commerce Development company in
+                haridwar to take care of all your e-commerce website for Business
+                requiements be it planning, designing
+                or building it form scratch. having the experience of working for
+                e-commerce website like avva,
+                servlets, jsp, spring mvc, spring boots, hibernate etc. we at
+                Aman web services bring you the best
+                e-commerce Developmerin haridwar.</p>
+
+        </div>
+    </div>
+    <div class="div3">
+        <div class="png1">
+            <div class="lo"></div>
+        </div>
+        <div class="wrt">
+            <h1>we are Aman. some info about us.</h1>
+            <p class="p1">here at Aman web services, we have desigined websites for
+                more than 1200 clients, varting
+                across all
+                industries.</p>
+            <div class="abt_box">
+                <div class="ql bb">
+                    <h2>500+</h2>
+                    <p>qualified lawyer</p>
+                </div>
+                <div class="sc bb">
+                    <h2>20,650+</h2>
+                    <p>solved cases</p>
+                </div>
+                <div class="tr bb">
+                    <h2>2.5k+</h2>
+                    <p>trusted clients</p>
+                </div>
+                <div class="ac bb">
+                    <h2>50+</h2>
+                    <p>achievemrnts </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="po">
+        <div class="top">
+            <div class="img"> </div>
+            <div class="img1 c"></div>
+            <div class="img2 c"></div>
+            <div class="img3 c"></div>
+            <div class="img4 c"></div>
+        </div>
+        <div class="wrtt">
+            <h1>our interactive team mates</h1>
+            <p>Based in Haridwar, Laksar, Roorkee, Dhehradun known as the IT Hub, we,
+                at Aman, pride ourselves on our
+                exquisite website designing and developement. We believe that aesthetics
+                are very important when it
+                comes to website designing, developement, and we pride ourselves for
+                getting that right!</p>
+            <a href="#">view members</a>
+        </div>
+    </div>
+    <div class="cus">
+        <h2>Contact us?</h2>
+        <p>feel free and contact us now</p>
+        <a href="#" class="MAIL">MAIL US</a>
+        <a href="#" class="call">CALL US </a>
+        <a href="#" class="whats">WHATSAPP US</a>
+
+    </div>
+
+    <div class="about">
+        <div class="h2">
+            <h2>focusing on the needs and goals of our client's Business</h2>
+        </div>
+        <div class="p">
+            <p>we provides comprehensive online solutions thats integrate website design,
+                Development and e-Commerce
+                website
+                solutions enable the creation of a cohesive and seamless online expertive
+                . we combine art with
+                technology &
+                deliver an effective internet presence.</p>
+
+            <p>technolectic india LLp, we know thats website is your marketing vechicle
+                and it should take you to new
+                horizons of success. our creative designers act as game changers. we
+                overhaul your website not only to
+                give
+                you a brand new look and feel, but eveness a heavy web traffic.</p>
+        </div>
+        <a href="#" class="MAIL">MAIL US NOW</a>
+    </div>
+    <div class="black">
+        <div class="abtne aa">
+            <h2>about Aman</h2>
+            <p>The world has become so fast paced that people don’t want to stand by
+                reading a page of information, they
+                would much rather look.</p>
+        </div>
+        <div class="navi aa">
+            <h2> navigation links</h2>
+
+            <div class="left">
+                <a href="#">home</a>
+                <a href="#">services</a>
+                <a href="#">projects</a>
+            </div>
+            <div class="right"><a href="#">team members</a>
+                <a href="#">blog</a>
+                <a href="#">contact</a></div>
+
+
+        </div>
+        <div class="news aa">
+            <h2>newsletter</h2>
+            <p>For business professionals caught between high
+                OEM price mediocre print and graphic.</p>
+        </div>
+        <div class="line"></div>
+        <div class="last">
+            <p>Copyright ©20202020 All rights reserved | This template is made with by<span> AmAN DhimAN.</span> </p>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
